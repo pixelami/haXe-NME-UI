@@ -165,7 +165,7 @@ class Label extends Component
 	override public function draw():Void
 	{
 		super.draw();
-		_tf.text = _text;
+		_tf.text = _text == null ? "" : _text;
 
 		if(_autoSize)
 		{

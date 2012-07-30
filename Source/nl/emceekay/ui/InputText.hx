@@ -151,7 +151,7 @@ class InputText extends Component
 
 		_tf.displayAsPassword = _password;
 		
-		_tf.text = _text;
+		_tf.text = _text == null ? "" : _text;
 		_tf.width = _width - 4;
 		if(_tf.text == "")
 		{
